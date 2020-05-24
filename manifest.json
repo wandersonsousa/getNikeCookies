@@ -1,0 +1,29 @@
+{
+    "manifest_version":2,
+    "name":"Get Nike Cookie",
+    "description": "Extensão que pega os cookies da página checkout na nike.",
+    "icons": {"128":"icon.png"},
+    "version": "0.1",
+    "author":"Wandersonsousa",
+    "browser_action": {
+   	 "default_title": "Get Nike Cookie ",
+   	 "default_popup": "popup.html",
+   	 "default_icon":"icon.png"
+    },
+    "permissions": ["activeTab", "declarativeContent", "storage"],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "content_scripts":[
+        {   
+            "matches":[
+                "https://www.nike.com.br/Checkout"
+            ],
+            "js":[
+                "content.js"
+            ]
+        }
+    ]
+
+}

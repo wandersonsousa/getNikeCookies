@@ -1,0 +1,25 @@
+#getCookieBtn{
+    width: 200px;
+    height: 40px;
+    background-color:#ecf0f1;   
+    font-family: cursive, Arial, Helvetica, sans-serif;
+    transition: ease-in-out .4s;
+    border-radius: 10px;
+    border: 1px solid #d35400;
+}
+
+#getCookieBtn p{
+    color: #e67e22;
+}
+
+#getCookieBtn:hover{
+    background-color: aqua;
+    cursor: pointer;
+    background-color: #c0392b;
+    z-index: 999;
+    border-radius: 10px;
+}
+
+#getCookieBtn:hover p{
+    color: #ecf0f1;
+}
